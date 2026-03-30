@@ -33,7 +33,7 @@
         .menu_icon_box {
             width: 40px;
             height: 30px;
-            margin: 20px;
+            margin: 5px;
             cursor: pointer;
             display: flex;
             flex-direction: column;
@@ -62,14 +62,38 @@
             transform: rotate(-45deg) translate(5px, -5px);
         }
 
-        .user-info {
+        .navbar {
             display: flex;
             justify-content: space-between;
-            padding: 15px;
+            padding: 10px;
             background-color: #0f1722;
+            align-items: center;
         }
-        .logout{
-
+         .navbar .menu_icon_box{
+            margin-right:  20px;
+         }
+         .navbar .nav-title{
+               margin-right:auto;
+         }
+         .navbar p{
+            margin-right: 20px;
+         }
+        .logout {
+            padding: 4px ;
+            background-color: #f1f1f3;
+            border: none;
+            font-size: 15px;
+            height: 30px;
+            border-radius: 5px;
+            color: #cccaca;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .logout:hover{
+            background-color: #1f2937;
+        }
+        .logout:active{
+            background-color: #1f2937;
         }
         .cards {
             display: grid;
@@ -134,16 +158,16 @@
 
 <body>
     <div class="header">
-        <div class="user-info">
-            <nav class="navbar">
+        <div class="navbar">
+            <nav >
                 <div class="menu_icon_box">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
             </nav>
-            <h1>NexaTech</h1>
-            <p class="username">Admin User</p>
+            <h1 class="nav-title">NexaTech</h1>
+            <p >Admin User</p>
             <button class="logout">Logout</button>
 
         </div>
